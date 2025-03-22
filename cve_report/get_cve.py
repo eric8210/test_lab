@@ -13,7 +13,7 @@ from collections import defaultdict
 # Configuration Section
 # ----------------------
 INPUT_CSV = "./inventory.csv"
-API_KEY = "393fd0e7-5e9e-42ad-9b25-6259dd01e95e"
+API_KEY = "your api key"
 API_DELAY = 6  # NVD API rate limit compliance
 NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 
