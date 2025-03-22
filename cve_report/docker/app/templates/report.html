@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>漏洞报告</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="nav-container">
+        <ul class="nav-menu">
+            <li><a href="{{ url_for('index') }}">主页</a></li>
+            <li><a href="{{ url_for('manage_inventory') }}">资产管理</a></li>
+            <li><a href="{{ url_for('show_report') }}">漏洞报告</a></li>
+        </ul>
+    </div>
+
+    <h1>漏洞报告 - {{ report_date }}</h1>
+    
+    {% if data %}
+    <table class="report-table">
+        <thead>
+            <tr>
+                <th>CVE ID</th>
+                <th>厂商</th>
+                <th>系统版本</th>
+                <th>严重程度</th>
+                <th>发布时间</th>
+                <th>最后更新</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td><a href="{{ item.refer_url }}" target="_blank">{{ item.cve_id }}</a></td>
+                <td>{{ item.vendor }}</td>
+                <td>{{ item.os_version }}</td>
+                <td class="severity-{{ item.baseseverity.lower() }}">{{ item.baseseverity }}</td>
+                <td>{{ item.published }}</td>
+                <td>{{ item.lastModified }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="no-report">今日无符合条件漏洞报告</div>
+    {% endif %}
+</body>
+</html>
