@@ -1,0 +1,28 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+    - 443:443
+    volumes:
+    - /var/log/nginx:/var/log/nginx
+    - ./nginx:/etc/nginx
+    - ./nginx/ssl:/etc/ssl
+    - ./app/static:/app/static
+    networks:
+    - vuln-net
+
+  web:
+    build: .
+    container_name: vuln-web
+    volumes:
+    - ./data:/app/data
+    - ./app/static:/app/static
+    environment:
+    - FLASK_ENV=production
+    networks:
+    - vuln-net
+
+networks:
+  vuln-net:
+    driver: bridge
