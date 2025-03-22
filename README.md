@@ -1,7 +1,7 @@
 这是一个长期开发的项目。我希望创建一个内部使用的CVE信息系统，每天定时从https://nvd.inst.org/拉取公司信息资产的漏洞情报并生成报告。
 本项目分成3部分
 第1，创建资产列表inventory.csv。这个文件包含厂家，系统版本及cpe。
-第2.1，利用python脚本，根据invenroty.csv中的cpe项目向https://services.nvd.nist.gov/rest/json/cves/2.0发送api-call，从而获取cve信息。
+第2.1，利用python脚本，根据invenroty.csv中的cpe项目向https://services.nvd.nist.gov/rest/json/cves/2.0 发送api-call，从而获取cve信息。
 第2.2，对cve信息进行过滤，发布日期或修改日期为1日内(为了让sample的report呈现更多结果，在脚本中设置为7日)，且baseseverity为Medium或以上(Medium,High,Critcal)的信息保存到以invenroty.csv文件中的os_version元素命名的json文件
 第2.3，提取结果中信息，把json文件中的cve_id，vendor，os_version，description，published，lastModified，basescore，baseseverity，refer_url，versionStartIncluding，versionEndExcluding的内容提取，并且对cve_id进行去重处理，合并vendor及os_version的内容，生成report.cvs文件
 第3，开发中……考虑利用docker nginx创建一个简单的网页，把inventory信息和cve port呈现出来。后续可以通过网页对inventory信息进行增加，删除，修改。
@@ -11,7 +11,8 @@
 2. 目前脚本执行时间比较长，需要优化脚本进行提速。
 3. 欢迎各位提出优化建议。
 
-===========================================================================================================================================================
+=================================================================================================
+
 This is a long-term development project. I aim to create an internal CVE information system that pulls vulnerability intelligence related to the company's assets information from https://nvd.inst.org/ daily on a scheduled basis and generates reports.
 
 The project consists of three parts:
