@@ -1,0 +1,43 @@
+device_type,vendor,os_version,cpe
+network_device,palo alto,PANOS,cpe:2.3:o:paloaltonetworks:pan-os:-:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.0,cpe:2.3:o:fortinet:fortios:7.0.0:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.1,cpe:2.3:o:fortinet:fortios:7.0.1:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.2,cpe:2.3:o:fortinet:fortios:7.0.2:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.3,cpe:2.3:o:fortinet:fortios:7.0.3:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.4,cpe:2.3:o:fortinet:fortios:7.0.4:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.5,cpe:2.3:o:fortinet:fortios:7.0.5:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.6,cpe:2.3:o:fortinet:fortios:7.0.6:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.7,cpe:2.3:o:fortinet:fortios:7.0.7:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.8,cpe:2.3:o:fortinet:fortios:7.0.8:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.9,cpe:2.3:o:fortinet:fortios:7.0.9:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.10,cpe:2.3:o:fortinet:fortios:7.0.10:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.11,cpe:2.3:o:fortinet:fortios:7.0.11:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.12,cpe:2.3:o:fortinet:fortios:7.0.12:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.13,cpe:2.3:o:fortinet:fortios:7.0.13:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.14,cpe:2.3:o:fortinet:fortios:7.0.14:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.0.15,cpe:2.3:o:fortinet:fortios:7.0.15:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.0,cpe:2.3:o:fortinet:fortios:7.2.0:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.1,cpe:2.3:o:fortinet:fortios:7.2.1:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.2,cpe:2.3:o:fortinet:fortios:7.2.2:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.3,cpe:2.3:o:fortinet:fortios:7.2.3:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.4,cpe:2.3:o:fortinet:fortios:7.2.4:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.5,cpe:2.3:o:fortinet:fortios:7.2.5:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.6,cpe:2.3:o:fortinet:fortios:7.2.6:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.7,cpe:2.3:o:fortinet:fortios:7.2.7:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.8,cpe:2.3:o:fortinet:fortios:7.2.8:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.2.9,cpe:2.3:o:fortinet:fortios:7.2.9:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.0,cpe:2.3:o:fortinet:fortios:7.4.0:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.1,cpe:2.3:o:fortinet:fortios:7.4.1:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.2,cpe:2.3:o:fortinet:fortios:7.4.2:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.3,cpe:2.3:o:fortinet:fortios:7.4.3:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.4,cpe:2.3:o:fortinet:fortios:7.4.4:*:*:*:*:*:*:*
+network_device,fortigate,FortiOS7.4.5,cpe:2.3:o:fortinet:fortios:7.4.5:*:*:*:*:*:*:*
+network_device,cisco,ASA,cpe:2.3:h:cisco:5500_series_adaptive_security_appliance:-:*:*:*:*:*:*:*
+OS,Rocky Linux,Rocky Linux 9.0,cpe:2.3:o:resf:rocky_linux:9.0:*:*:*:*:*:*:*
+OS,Rocky Linux,Rocky Linux 9.1,cpe:2.3:o:resf:rocky_linux:9.1:*:*:*:*:*:*:*
+OS,Rocky Linux,Rocky Linux 9.2,cpe:2.3:o:resf:rocky_linux:9.2:*:*:*:*:*:*:*
+OS,Rocky Linux,Rocky Linux 9.3,cpe:2.3:o:resf:rocky_linux:9.3:*:*:*:*:*:*:*
+OS,Rocky Linux,Rocky Linux 9.4,cpe:2.3:o:resf:rocky_linux:9.4:*:*:*:*:*:*:*
+OS,Ubuntu,Ubuntu Linux,cpe:2.3:o:canonical:ubuntu_linux:22.04:*:*:*:lts:*:*:*
+OS,vmware,vcsa 7.0,cpe:2.3:a:vmware:vcenter_server:7.0:update3:*:*:*:*:*:*
+OS,proxmox,pve 8.2,cpe:2.3:a:proxmox:virtual_environment:8.0:-:*:*:*:*:*:*

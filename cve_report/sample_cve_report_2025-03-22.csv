@@ -1,0 +1,8 @@
+cve_id,vendor,os_version,description,published,lastModified,basescore,baseseverity,refer_url,versionStartIncluding,versionEndExcluding
+CVE-2025-24472,fortigate,FortiOS7.0.0; FortiOS7.0.1; FortiOS7.0.10; FortiOS7.0.11; FortiOS7.0.12; FortiOS7.0.13; FortiOS7.0.14; FortiOS7.0.15; FortiOS7.0.2; FortiOS7.0.3; FortiOS7.0.4; FortiOS7.0.5; FortiOS7.0.6; FortiOS7.0.7; FortiOS7.0.8; FortiOS7.0.9,"An?Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS 7.0.0 through 7.0.16 and FortiProxy 7.2.0 through 7.2.12, 7.0.0 through 7.0.19 may allow a remote attacker to gain super-admin privileges via crafted CSF proxy requests.",2025-02-11T17:15:34.867,2025-03-19T20:21:38.197,9.8,CRITICAL,https://fortiguard.fortinet.com/psirt/FG-IR-24-535,7.0.0|7.2.0|7.0.0,7.0.20|7.2.13|7.0.17
+CVE-2023-3777,Ubuntu,Ubuntu Linux,"A use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.
+
+When nf_tables_delrule() is flushing table rules, it is not checked whether the chain is bound and the chain's owner rule can also release the objects in certain circumstances.
+
+We recommend upgrading past commit 6eaf41e87a223ae6f8e7a28d6e78384ad7e407f8.",2023-09-06T14:15:10.860,2025-03-20T17:00:02.777,7.8,HIGH,http://packetstormsecurity.com/files/175072/Kernel-Live-Patch-Security-Notice-LSN-0098-1.html,5.9|5.11|5.16|6.2,5.10.188|5.15.123|6.1.42|6.4.7
+CVE-2022-28656,Ubuntu,Ubuntu Linux,is_closing_session() allows users to consume RAM in the Apport process,2024-06-04T22:15:10.007,2025-03-19T18:15:17.147,5.5,MEDIUM,https://ubuntu.com/security/notices/USN-5427-1,null,2.21.0
