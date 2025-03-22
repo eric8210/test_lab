@@ -1,4 +1,4 @@
-这是一个长期开发的项目。我希望创建一个内部使用的CVE信息系统，每天定时从https://nvd.inst.org/拉取公司信息资产的漏洞情报并生成报告。
+这是一个长期开发的项目。我希望创建一个内部使用的CVE信息系统，每天定时从https://nvd.inst.org/ 拉取公司信息资产的漏洞情报并生成报告。
 本项目分成3部分
 第1，创建资产列表inventory.csv。这个文件包含厂家，系统版本及cpe。
 第2.1，利用python脚本，根据invenroty.csv中的cpe项目向https://services.nvd.nist.gov/rest/json/cves/2.0 发送api-call，从而获取cve信息。
