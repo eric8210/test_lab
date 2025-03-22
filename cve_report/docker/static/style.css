@@ -1,0 +1,250 @@
+/* static/style.css */
+
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* 导航菜单 */
+.nav-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu li {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 表单样式 */
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* 操作按钮组 */
+.action-buttons form {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* 状态提示 */
+.error-message {
+    color: #e74c3c;
+    padding: 1rem;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.success-message {
+    color: #2ecc71;
+    padding: 1rem;
+    background-color: #d4edda;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+
+/* 新增报告页面样式 */
+.report-table {
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.severity-critical {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.severity-high {
+    color: #ff6b6b;
+}
+
+.severity-medium {
+    color: #ffc107;
+}
+
+.no-report {
+    padding: 20px;
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* 优化资产页面 */
+.btn-delete {
+    background: #dc3545;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background: #007bff;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+
+<style>
+/* 添加至static/style.css */
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed; /* 固定列宽 */
+}
+
+.report-table th,
+.report-table td {
+    border: 1px solid #dee2e6; /* 添加边框 */
+    padding: 12px;
+    text-align: center; /* 居中对齐 */
+    vertical-align: middle;
+    word-break: break-word; /* 长文本换行 */
+}
+
+/* 列宽调整 */
+.report-table th:nth-child(1),
+.report-table td:nth-child(1) { /* CVE ID列 */
+    width: 15%;
+    min-width: 150px;
+}
+
+.report-table th:nth-child(2),
+.report-table td:nth-child(2) { /* 厂商列 */
+    width: 15%;
+}
+
+.report-table th:nth-child(3),
+.report-table td:nth-child(3) { /* 系统版本列 */
+    width: 20%;
+}
+
+.report-table th:nth-child(4),
+.report-table td:nth-child(4) { /* 严重程度列 */
+    width: 10%;
+}
+
+.report-table th:nth-child(5),
+.report-table td:nth-child(5), /* 发布时间列 */
+.report-table th:nth-child(6),
+.report-table td:nth-child(6) { /* 最后更新列 */
+    width: 15%;
+}
+
+/* 增强可读性 */
+.report-table thead {
+    background-color: #3498db;
+    color: white;
+}
+
+.report-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.report-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+</style>
